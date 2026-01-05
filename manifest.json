@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "version": "1.0.0",
+  "default_locale": "ja",
+  "permissions": ["storage"],
+  "host_permissions": ["https://twitter.com/*", "https://x.com/*"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "__MSG_appName__"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": [
+        "scripts/utils.js",
+        "scripts/features/hideLeftSidebarText.js",
+        "scripts/features/hideRightSidebar.js",
+        "scripts/features/hideSearchBar.js",
+        "scripts/features/hideTweetInput.js",
+        "scripts/features/hideSidebarItems.js",
+        "scripts/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

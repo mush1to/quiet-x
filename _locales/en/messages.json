@@ -1,0 +1,57 @@
+{
+  "appName": {
+    "message": "Quiet X"
+  },
+  "appDesc": {
+    "message": "Customize X.com display elements for a quieter timeline."
+  },
+  "header_settings": {
+    "message": "Settings"
+  },
+  "category_leftSidebar": {
+    "message": "Left Sidebar"
+  },
+  "category_navItems": {
+    "message": "Hide Navigation Items"
+  },
+  "category_rightSidebar": {
+    "message": "Right Sidebar"
+  },
+  "category_timeline": {
+    "message": "Timeline"
+  },
+  "setting_hideLeftSidebarText": {
+    "message": "Hide Text"
+  },
+  "note_reload_required": {
+    "message": "*Reload required after changing"
+  },
+  "setting_hideRightSidebar": {
+    "message": "Hide Trends & Suggestions"
+  },
+  "setting_hideSearchBar": {
+    "message": "Hide Search Bar"
+  },
+  "setting_hideTweetInput": {
+    "message": "Remove Tweet Input"
+  },
+  "category_language": {
+    "message": "Language"
+  },
+  "nav_logo": { "message": "X Logo" },
+  "nav_home": { "message": "Home" },
+  "nav_explore": { "message": "Explore" },
+  "nav_notifications": { "message": "Notifications" },
+  "nav_messages": { "message": "Messages" },
+  "nav_grok": { "message": "Grok" },
+  "nav_lists": { "message": "Lists" },
+  "nav_bookmarks": { "message": "Bookmarks" },
+  "nav_communities": { "message": "Communities" },
+  "nav_premium": { "message": "Premium" },
+  "nav_profile": { "message": "Profile" },
+  "nav_more": { "message": "More" },
+  "nav_tweetButton": { "message": "Post Button" },
+  "nav_accountSwitcher": { "message": "Account Switcher" },
+  "footer_donate": { "message": "Donate (Streamlabs)" },
+  "footer_github": { "message": "GitHub (Source)" }
+}

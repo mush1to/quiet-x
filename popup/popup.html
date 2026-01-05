@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2 data-i18n="header_settings">Settings</h2>
+  <div class="settings-container">
+    
+    <div class="category">
+      <h3 data-i18n="category_leftSidebar">Left Sidebar Settings</h3>
+      
+      <label class="setting-item">
+        <input type="checkbox" id="hideLeftSidebarText">
+        <span data-i18n="setting_hideLeftSidebarText">Hide Left Sidebar Text</span>
+      </label>
+      
+      <p class="reload-note" data-i18n="note_reload_required">※設定変更後はページの再読み込みが必要です</p>
+
+      <div class="subsection-divider"></div>
+      
+      <h4 data-i18n="category_navItems">Hide Navigation Items</h4>
+      <div class="grid-container">
+        <label class="setting-item">
+          <input type="checkbox" id="nav_logo">
+          <span data-i18n="nav_logo">X Logo</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_home">
+          <span data-i18n="nav_home">Home</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_explore">
+          <span data-i18n="nav_explore">Explore</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_notifications">
+          <span data-i18n="nav_notifications">Notifications</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_messages">
+          <span data-i18n="nav_messages">Messages</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_grok">
+          <span data-i18n="nav_grok">Grok</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_lists">
+          <span data-i18n="nav_lists">Lists</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_bookmarks">
+          <span data-i18n="nav_bookmarks">Bookmarks</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_communities">
+          <span data-i18n="nav_communities">Communities</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_premium">
+          <span data-i18n="nav_premium">Premium</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_profile">
+          <span data-i18n="nav_profile">Profile</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_more">
+          <span data-i18n="nav_more">More</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_tweetButton">
+          <span data-i18n="nav_tweetButton">Post Button</span>
+        </label>
+        <label class="setting-item">
+          <input type="checkbox" id="nav_accountSwitcher">
+          <span data-i18n="nav_accountSwitcher">Account Switcher</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="category">
+      <h3 data-i18n="category_rightSidebar">Right Sidebar</h3>
+      <label class="setting-item">
+        <input type="checkbox" id="hideSearchBar">
+        <span data-i18n="setting_hideSearchBar">Hide Search Bar</span>
+      </label>
+      <label class="setting-item">
+        <input type="checkbox" id="hideRightSidebar">
+        <span data-i18n="setting_hideRightSidebar">Hide Trends & Suggestions</span>
+      </label>
+    </div>
+
+    <div class="category">
+      <h3 data-i18n="category_timeline">Timeline</h3>
+      <label class="setting-item">
+        <input type="checkbox" id="hideTweetInput">
+        <span data-i18n="setting_hideTweetInput">Remove Tweet Input</span>
+      </label>
+    </div>
+
+    <div class="category">
+      <h3 data-i18n="category_language">Language Settings</h3>
+      <select id="ui_language" class="language-select">
+        <option value="system">System</option>
+        <option value="ja">日本語</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a href="https://streamlabs.com/mush1to/tip" target="_blank" data-i18n="footer_donate">Donate</a>
+    <span class="separator">|</span>
+    <a href="https://github.com/mush1to/quiet-x" target="_blank" data-i18n="footer_github">GitHub</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

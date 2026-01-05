@@ -1,0 +1,130 @@
+body {
+  width: 320px;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.category {
+  background: #f7f9fa;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.category h3 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #536471;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 6px;
+}
+
+.category h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #536471;
+  margin: 12px 0 8px 0;
+}
+
+.subsection-divider {
+  height: 1px;
+  background-color: #e1e8ed;
+  margin: 10px 0;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.setting-item:last-child {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Reload note style */
+.reload-note {
+  margin: -4px 0 10px 26px; /* Align with text, negative top margin to pull closer */
+  font-size: 11px;
+  color: #e0245e; /* Twitter Red-ish */
+  /* or #536471 for grey */
+  font-weight: 500;
+}
+
+/* Grid layout for nav items to save space */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.grid-container .setting-item {
+  margin-bottom: 0;
+  font-size: 13px; 
+}
+
+/* Language Select */
+.language-select {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cfd9de;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #8899a6;
+}
+
+.footer a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .separator {
+  color: #e1e8ed;
+}
