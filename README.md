@@ -49,7 +49,7 @@ Customize your X experience by toggling the following elements:
 2. Toggle the switches for the elements you want to hide.
 3. Reload the page for changes to take effect.
 
-> **Note**: A page reload is required for changes to be applied.
+> **Note**: You must reload the page after toggling the "Hide Text" feature.
 
 ## Localization
 
