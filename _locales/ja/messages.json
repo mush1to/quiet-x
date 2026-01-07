@@ -12,7 +12,7 @@
     "message": "左サイドバー"
   },
   "category_navItems": {
-    "message": "ナビゲーション項目の非表示"
+    "message": "ナビゲーション"
   },
   "category_rightSidebar": {
     "message": "右サイドバー"
@@ -21,19 +21,28 @@
     "message": "タイムライン"
   },
   "setting_hideLeftSidebarText": {
-    "message": "テキストを非表示"
+    "message": "テキスト"
   },
   "note_reload_required": {
     "message": "※設定変更後はページの再読み込みが必要です"
   },
   "setting_hideRightSidebar": {
-    "message": "トレンド・おすすめ等を非表示"
+    "message": "トレンド・おすすめ等"
   },
   "setting_hideSearchBar": {
-    "message": "検索窓を非表示"
+    "message": "検索"
   },
   "setting_hideTweetInput": {
-    "message": "投稿欄を削除"
+    "message": "ポスト欄"
+  },
+  "category_overlay": {
+    "message": "フローティング / オーバーレイ"
+  },
+  "setting_hideDMDrawer": {
+    "message": "チャット"
+  },
+  "setting_hideGrokDrawer": {
+    "message": "Grok"
   },
   "category_language": {
     "message": "言語"
@@ -42,7 +51,7 @@
   "nav_home": { "message": "ホーム" },
   "nav_explore": { "message": "話題を検索" },
   "nav_notifications": { "message": "通知" },
-  "nav_messages": { "message": "メッセージ" },
+  "nav_messages": { "message": "チャット" },
   "nav_grok": { "message": "Grok" },
   "nav_lists": { "message": "リスト" },
   "nav_bookmarks": { "message": "ブックマーク" },
@@ -50,7 +59,7 @@
   "nav_premium": { "message": "プレミアム" },
   "nav_profile": { "message": "プロフィール" },
   "nav_more": { "message": "もっと見る" },
-  "nav_tweetButton": { "message": "ポストするボタン" },
+  "nav_tweetButton": { "message": "ポストする" },
   "nav_accountSwitcher": { "message": "アカウント切り替え" },
   "footer_donate": { "message": "寄付 (Streamlabs)" },
   "footer_github": { "message": "GitHub (ソースコード)" }

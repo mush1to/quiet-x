@@ -4,6 +4,8 @@
     'hideSearchBar',
     'hideRightSidebar',
     'hideTweetInput',
+    'hideDMDrawer',
+    'hideGrokDrawer',
     // Nav items
     'nav_logo',
     'nav_home',

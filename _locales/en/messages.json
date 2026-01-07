@@ -12,7 +12,7 @@
     "message": "Left Sidebar"
   },
   "category_navItems": {
-    "message": "Hide Navigation Items"
+    "message": "Navigation"
   },
   "category_rightSidebar": {
     "message": "Right Sidebar"
@@ -21,19 +21,28 @@
     "message": "Timeline"
   },
   "setting_hideLeftSidebarText": {
-    "message": "Hide Text"
+    "message": "Text"
   },
   "note_reload_required": {
     "message": "*Reload required after changing"
   },
   "setting_hideRightSidebar": {
-    "message": "Hide Trends & Suggestions"
+    "message": "Trends & Suggestions"
   },
   "setting_hideSearchBar": {
-    "message": "Hide Search Bar"
+    "message": "Search Bar"
   },
   "setting_hideTweetInput": {
-    "message": "Remove Tweet Input"
+    "message": "Post Input"
+  },
+  "category_overlay": {
+    "message": "Floating / Overlay"
+  },
+  "setting_hideDMDrawer": {
+    "message": "Chat"
+  },
+  "setting_hideGrokDrawer": {
+    "message": "Grok"
   },
   "category_language": {
     "message": "Language"
@@ -42,7 +51,7 @@
   "nav_home": { "message": "Home" },
   "nav_explore": { "message": "Explore" },
   "nav_notifications": { "message": "Notifications" },
-  "nav_messages": { "message": "Messages" },
+  "nav_messages": { "message": "Chat" },
   "nav_grok": { "message": "Grok" },
   "nav_lists": { "message": "Lists" },
   "nav_bookmarks": { "message": "Bookmarks" },
@@ -50,7 +59,7 @@
   "nav_premium": { "message": "Premium" },
   "nav_profile": { "message": "Profile" },
   "nav_more": { "message": "More" },
-  "nav_tweetButton": { "message": "Post Button" },
+  "nav_tweetButton": { "message": "Post" },
   "nav_accountSwitcher": { "message": "Account Switcher" },
   "footer_donate": { "message": "Donate (Streamlabs)" },
   "footer_github": { "message": "GitHub (Source)" }
