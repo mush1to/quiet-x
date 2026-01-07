@@ -20,6 +20,8 @@
         "scripts/features/hideSearchBar.js",
         "scripts/features/hideTweetInput.js",
         "scripts/features/hideSidebarItems.js",
+        "scripts/features/hideDMDrawer.js",
+        "scripts/features/hideGrokDrawer.js",
         "scripts/main.js"
       ],
       "run_at": "document_idle"

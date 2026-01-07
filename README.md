@@ -1,44 +1,63 @@
 # Quiet X
 
-Quiet X is a Chrome extension that customizes display elements on the X (formerly Twitter) website to realize a quieter, more focused timeline.
+Quiet X is a Chrome extension that cleans up and simplifies the X (formerly Twitter) interface. It gives you granular control over what you see, allowing you to hide distractions and focus on what matters.
 
-By individually hiding unnecessary sidebars, notifications, trends, etc., it provides a simple X experience tailored to your preferences.
+## Features
 
-## Key Features
+Customize your X experience by toggling the following elements:
 
 ### 🎨 Left Sidebar
-- **Hide Text**: Displays left sidebar menu as icons only, allowing for wider screen usage.
-  - Icons are aligned to the right (towards the timeline).
-  - The post button is changed to a simple feather pen icon.
-- **Hide Navigation Items Individually**:
-  - Individually toggle Home, Explore, Notifications, Messages, Grok, Lists, Bookmarks, Communities, Premium, Profile, More, Post Button, Account Switcher, and X Logo.
+- **Text**: Hide menu text labels to show only icons.
+- **Navigation**: Individually toggle visibility for:
+  - Logo
+  - Home
+  - Explore
+  - Notifications
+  - Chat (Messages)
+  - Grok
+  - Lists
+  - Bookmarks
+  - Communities
+  - Premium
+  - Profile
+  - More
+  - Post
+  - Account Switcher
 
 ### 🧹 Right Sidebar
-- **Hide Trends & Suggestions**: Hides "What's happening", "Who to follow", etc.
-- **Hide Search Bar**: Hides the search bar for a cleaner look.
+- **Search Bar**: Hide the search input field.
+- **Trends & Suggestions**: Remove the "What's happening" and "Who to follow" sections.
 
 ### ⏱️ Timeline
-- **Remove Tweet Input**: Hides the "What is happening?!" input area at the top of the timeline.
+- **Post Input**: Hide the "What is happening?!" input area at the top of the timeline.
 
-### 🌐 Other Features
-- **Language Settings**: Select the extension's display language from "System (Browser setting)", "Japanese", or "English".
-- **Dark Mode Support**: Icons like the post button automatically adjust to match X's background color.
+### 🧩 Floating / Overlay
+- **Grok**: Hide the Grok drawer/button at the bottom right.
+- **Chat**: Hide the Message drawer at the bottom right.
 
 ## Installation
 
-1. Install from the [Chrome Web Store](#) (if published).
-2. Or, download the source code, go to Chrome's extension management page (`chrome://extensions`), select "Load unpacked", and load the folder.
+1. Clone or download this repository.
+2. Open Chrome and navigate to `chrome://extensions`.
+3. Enable **Developer mode** in the top right corner.
+4. Click **Load unpacked**.
+5. Select the directory containing this extension.
 
-## Changing Settings
+## Usage
 
-Click the extension icon in the top right of the browser to open the settings popup.
-Simply toggle the checkboxes for each item to see changes reflected immediately (some features require a reload).
+1. Click the **Quiet X** icon in your browser toolbar.
+2. Toggle the switches for the elements you want to hide.
+3. Reload the page for changes to take effect.
 
-> **Note**: You must reload the page after toggling the "Hide Text" feature.
+> **Note**: A page reload is required for changes to be applied.
 
-## Developer Info & Support
+## Localization
 
-This project is open source. Bug reports and feature requests are welcome via GitHub Issues.
+Supported languages:
+- English
+- Japanese
+
+## Developer Info
 
 - **GitHub**: [mush1to/quiet-x](https://github.com/mush1to/quiet-x)
 - **Donate**: [Streamlabs](https://streamlabs.com/mush1to/tip)
