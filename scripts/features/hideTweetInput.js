@@ -2,19 +2,13 @@
   const featureId = 'hideTweetInput';
   
   // Targeting the compose box at the top of the timeline
-  // [data-testid="tweetTextarea_0"] is the input.
-  // We want to hide its container.
+  // We want to avoid hiding the reply modal or the reply box in tweet details.
   
   const css = `
-    /* Hiding the container that has the tweet input */
-    [data-testid="primaryColumn"] > div > div:not([data-testid]) > div:has([data-testid="tweetTextarea_0"]) {
+    /* Hiding the container that has the tweet input ONLY in the primary column timeline */
+    /* Structure: primaryColumn > (scroll wrapper) > (header + input + timeline) */
+    [data-testid="primaryColumn"] > div > div > div > div:has([data-testid="tweetTextarea_0"]) {
       display: none !important;
-    }
-    
-    /* Fallback/Alternative if the above structure changes */
-    /* Often the compose box is in a div with border-bottom */
-    div:has(> div > div > div > [data-testid="tweetTextarea_0"]) {
-       display: none !important;
     }
   `;
 
