@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'hideSearchBar',
     'hideRightSidebar',
     'hideTweetInput',
+    'hideTimelineGrok',
     'hideDMDrawer',
     'hideGrokDrawer',
     'nav_logo',

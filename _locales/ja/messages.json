@@ -35,6 +35,12 @@
   "setting_hideTweetInput": {
     "message": "ポスト欄"
   },
+  "timeline_post": {
+    "message": "ポスト"
+  },
+  "setting_hideTimelineGrok": {
+    "message": "Grok"
+  },
   "category_overlay": {
     "message": "フローティング / オーバーレイ"
   },
