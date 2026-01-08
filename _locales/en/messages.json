@@ -44,9 +44,6 @@
   "setting_hideGrokDrawer": {
     "message": "Grok"
   },
-  "category_language": {
-    "message": "Language"
-  },
   "nav_logo": { "message": "X Logo" },
   "nav_home": { "message": "Home" },
   "nav_explore": { "message": "Explore" },

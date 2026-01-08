@@ -44,9 +44,6 @@
   "setting_hideGrokDrawer": {
     "message": "Grok"
   },
-  "category_language": {
-    "message": "言語"
-  },
   "nav_logo": { "message": "X ロゴ" },
   "nav_home": { "message": "ホーム" },
   "nav_explore": { "message": "話題を検索" },
