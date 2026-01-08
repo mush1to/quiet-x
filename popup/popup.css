@@ -128,3 +128,51 @@ input[type="checkbox"] {
 .footer .separator {
   color: #e1e8ed;
 }
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #15202b;
+    color: #e7e9ea;
+  }
+
+  h2 {
+    border-bottom-color: #38444d;
+  }
+
+  .category {
+    background: #192734;
+  }
+
+  .category h3 {
+    color: #8b98a5;
+    border-bottom-color: #38444d;
+  }
+
+  .category h4 {
+    color: #8b98a5;
+  }
+
+  .subsection-divider {
+    background-color: #38444d;
+  }
+
+  .reload-note {
+    color: #f4212e;
+  }
+
+  .language-select {
+    background-color: #192734;
+    color: #e7e9ea;
+    border-color: #38444d;
+  }
+
+  .footer {
+    border-top-color: #38444d;
+    color: #8b98a5;
+  }
+
+  .footer .separator {
+    color: #38444d;
+  }
+}
