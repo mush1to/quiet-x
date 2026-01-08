@@ -1,8 +1,35 @@
+:root {
+  --qx-bg: #ffffff;
+  --qx-text: #0f1419;
+  --qx-muted: #536471;
+  --qx-surface: #f7f9fa;
+  --qx-border: #e1e8ed;
+  --qx-border-strong: #f0f0f0;
+  --qx-link: #1d9bf0;
+  --qx-danger: #e0245e;
+  --qx-control: #1d9bf0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --qx-bg: #0f172a;
+    --qx-text: #e6edf7;
+    --qx-muted: #9fb2d0;
+    --qx-surface: #16233b;
+    --qx-border: #2a3a5b;
+    --qx-border-strong: #334766;
+    --qx-link: #4aa3ff;
+    --qx-danger: #ff6b93;
+    --qx-control: #4aa3ff;
+  }
+}
+
 body {
   width: 320px;
   padding: 15px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #333;
+  color: var(--qx-text);
+  background: var(--qx-bg);
 }
 
 h2 {
@@ -10,7 +37,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 2px solid var(--qx-border-strong);
 }
 
 .settings-container {
@@ -20,7 +47,7 @@ h2 {
 }
 
 .category {
-  background: #f7f9fa;
+  background: var(--qx-surface);
   padding: 12px;
   border-radius: 12px;
 }
@@ -28,24 +55,24 @@ h2 {
 .category h3 {
   font-size: 13px;
   font-weight: 700;
-  color: #536471;
+  color: var(--qx-muted);
   margin: 0 0 10px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid #e1e8ed;
+  border-bottom: 1px solid var(--qx-border);
   padding-bottom: 6px;
 }
 
 .category h4 {
   font-size: 12px;
   font-weight: 600;
-  color: #536471;
+  color: var(--qx-muted);
   margin: 12px 0 8px 0;
 }
 
 .subsection-divider {
   height: 1px;
-  background-color: #e1e8ed;
+  background-color: var(--qx-border);
   margin: 10px 0;
 }
 
@@ -68,13 +95,14 @@ input[type="checkbox"] {
   height: 16px;
   margin: 0;
   flex-shrink: 0;
+  accent-color: var(--qx-control);
 }
 
 /* Reload note style */
 .reload-note {
   margin: -4px 0 10px 26px; /* Align with text, negative top margin to pull closer */
   font-size: 11px;
-  color: #e0245e; /* Twitter Red-ish */
+  color: var(--qx-danger); /* Twitter Red-ish */
   /* or #536471 for grey */
   font-weight: 500;
 }
@@ -96,10 +124,10 @@ input[type="checkbox"] {
   width: 100%;
   padding: 6px;
   border-radius: 6px;
-  border: 1px solid #cfd9de;
+  border: 1px solid var(--qx-border);
   font-size: 14px;
-  color: #333;
-  background-color: white;
+  color: var(--qx-text);
+  background-color: var(--qx-bg);
   cursor: pointer;
 }
 
@@ -107,17 +135,17 @@ input[type="checkbox"] {
 .footer {
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--qx-border-strong);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  color: #8899a6;
+  color: var(--qx-muted);
 }
 
 .footer a {
-  color: #1d9bf0;
+  color: var(--qx-link);
   text-decoration: none;
 }
 
@@ -126,5 +154,5 @@ input[type="checkbox"] {
 }
 
 .footer .separator {
-  color: #e1e8ed;
+  color: var(--qx-border);
 }
