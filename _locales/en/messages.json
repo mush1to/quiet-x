@@ -35,6 +35,12 @@
   "setting_hideTweetInput": {
     "message": "Post Input"
   },
+  "timeline_post": {
+    "message": "Post"
+  },
+  "setting_hideTimelineGrok": {
+    "message": "Grok"
+  },
   "category_overlay": {
     "message": "Floating / Overlay"
   },

@@ -30,6 +30,8 @@ Customize your X experience by toggling the following elements:
 
 ### ⏱️ Timeline
 - **Post Input**: Hide the "What is happening?!" input area at the top of the timeline.
+- **Post**:
+  - **Grok**: Hide the Grok button in timeline posts.
 
 ### 🧩 Floating / Overlay
 - **Grok**: Hide the Grok drawer/button at the bottom right.

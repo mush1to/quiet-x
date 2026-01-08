@@ -4,6 +4,7 @@
     'hideSearchBar',
     'hideRightSidebar',
     'hideTweetInput',
+    'hideTimelineGrok',
     'hideDMDrawer',
     'hideGrokDrawer',
     // Nav items
