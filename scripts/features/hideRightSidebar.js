@@ -1,18 +1,45 @@
 (function() {
-  const featureId = 'hideRightSidebar';
-  
-  // Hide everything in sidebar column EXCEPT the search bar
-  // Using :has() to identify the container with the search form and exclude it from hiding
-  // Also targeting specific known sections like Trends and Who to follow
-  
-  const css = `
-    /* General approach: Hide direct children of the main sidebar container that don't contain the search bar */
-    /* This path is brittle, so we combine it with specific element hiding */
+  /*
+   * Feature: hideSearchBar
+   * Hide the search bar in the right sidebar.
+   */
+  const searchBarFeatureId = 'hideSearchBar';
+
+  const searchBarCss = `
+    [data-testid="sidebarColumn"] form[role="search"] {
+      display: none !important;
+    }
+
+    [data-testid="sidebarColumn"] div:has(> form[role="search"]) {
+       display: none !important;
+       height: 0 !important;
+       min-height: 0 !important;
+       margin: 0 !important;
+       padding: 0 !important;
+    }
+
+    [data-testid="sidebarColumn"] > div > div > div > div > div > div:first-child:has(form[role="search"]) {
+      display: none !important;
+    }
+  `;
+
+  window.QuietX.features[searchBarFeatureId] = {
+    apply: (active) => {
+      window.QuietX.utils.updateStyle(searchBarFeatureId, searchBarCss, active);
+    }
+  };
+
+  /*
+   * Feature: hideRightSidebar
+   * Hide right sidebar sections like Trends and Who to follow (while keeping the search bar unless disabled separately).
+   */
+  const rightSidebarFeatureId = 'hideRightSidebar';
+
+  const rightSidebarCss = `
     [data-testid="sidebarColumn"] > div > div > div > div > div > div:not(:has(form[role="search"])) {
       display: none !important;
     }
-    
-    /* Specific targeting for robustness */
+
     [data-testid="sidebarColumn"] section[role="region"],
     [data-testid="sidebarColumn"] aside[role="complementary"],
     [data-testid="sidebarColumn"] nav[aria-label="Footer"] {
@@ -20,9 +47,9 @@
     }
   `;
 
-  window.QuietX.features[featureId] = {
+  window.QuietX.features[rightSidebarFeatureId] = {
     apply: (active) => {
-      window.QuietX.utils.updateStyle(featureId, css, active);
+      window.QuietX.utils.updateStyle(rightSidebarFeatureId, rightSidebarCss, active);
     }
   };
 })();

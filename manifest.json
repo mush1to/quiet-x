@@ -25,10 +25,8 @@
       "matches": ["https://twitter.com/*", "https://x.com/*"],
       "js": [
         "scripts/utils.js",
-        "scripts/features/hideLeftSidebarText.js",
+        "scripts/features/hideLeftSidebar.js",
         "scripts/features/hideRightSidebar.js",
-        "scripts/features/hideSearchBar.js",
-        "scripts/features/hideSidebarItems.js",
         "scripts/features/hideOverlay.js",
         "scripts/features/hideTimeline.js",
         "scripts/main.js"
