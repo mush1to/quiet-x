@@ -1,9 +1,9 @@
 (function() {
   /*
-   * Feature: hideDMDrawer
+   * Feature: hideOverlayDMDrawer
    * Hide the DM Drawer (Message Box) at the bottom right.
    */
-  const dmFeatureId = 'hideDMDrawer';
+  const dmFeatureId = 'hideOverlayDMDrawer';
   const dmCss = `
     /* Primary Target: The main drawer container provided by user */
     [data-testid="chat-drawer-main"],
@@ -35,10 +35,10 @@
   };
 
   /*
-   * Feature: hideGrokDrawer
+   * Feature: hideOverlayGrokDrawer
    * Hide only the Grok Drawer/Button at the bottom right.
    */
-  const grokFeatureId = 'hideGrokDrawer';
+  const grokFeatureId = 'hideOverlayGrokDrawer';
   const grokCss = `
     /* 1. Explicit Grok Drawer ID */
     [data-testid="GrokDrawer"],

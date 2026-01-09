@@ -1,27 +1,31 @@
 (function() {
   const featureKeys = [
     'hideLeftSidebarText',
-    'hideSearchBar',
-    'hideRightSidebar',
-    'hideTweetInput',
+    'hideRightSidebarSearchBar',
+    'hideRightSidebarPremium',
+    'hideRightSidebarNews',
+    'hideRightSidebarTrends',
+    'hideRightSidebarWhoToFollow',
+    'hideRightSidebarFooter',
+    'hideTimelineTweetInput',
     'hideTimelineGrok',
-    'hideDMDrawer',
-    'hideGrokDrawer',
-    // Nav items
-    'nav_logo',
-    'nav_home',
-    'nav_explore',
-    'nav_notifications',
-    'nav_messages',
-    'nav_grok',
-    'nav_lists',
-    'nav_bookmarks',
-    'nav_communities',
-    'nav_premium',
-    'nav_profile',
-    'nav_more',
-    'nav_tweetButton',
-    'nav_accountSwitcher'
+    'hideOverlayDMDrawer',
+    'hideOverlayGrokDrawer',
+    // Icons
+    'icon_logo',
+    'icon_home',
+    'icon_explore',
+    'icon_notifications',
+    'icon_messages',
+    'icon_grok',
+    'icon_lists',
+    'icon_bookmarks',
+    'icon_communities',
+    'icon_premium',
+    'icon_profile',
+    'icon_more',
+    'icon_tweetButton',
+    'icon_accountSwitcher'
   ];
 
   function applySettings(settings) {

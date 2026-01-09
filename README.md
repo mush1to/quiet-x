@@ -27,6 +27,11 @@ Customize your X experience by toggling the following elements:
 ### 🧹 Right Sidebar
 - **Search Bar**: Hide the search input field.
 - **Trends & Suggestions**: Remove the "What's happening" and "Who to follow" sections.
+- **Premium**: Hide the Premium sign-up module.
+- **News**: Hide the “Today’s news” module.
+- **Trends**: Hide the Trends module.
+- **Who to follow**: Hide the “Who to follow” module.
+- **Footer**: Hide the footer links (Terms, Privacy, etc.).
 
 ### ⏱️ Timeline
 - **Post Input**: Hide the "What is happening?!" input area at the top of the timeline.
@@ -62,4 +67,4 @@ Supported languages:
 ## Developer Info
 
 - **GitHub**: [mush1to/quiet-x](https://github.com/mush1to/quiet-x)
-- **Donate**: [Streamlabs](https://streamlabs.com/mush1to/tip)
+- **Donate**: [streamlabs.com/mush1to/tip](https://streamlabs.com/mush1to/tip)
