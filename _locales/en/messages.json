@@ -11,9 +11,6 @@
   "category_leftSidebar": {
     "message": "Left Sidebar"
   },
-  "category_navItems": {
-    "message": "Navigation"
-  },
   "category_rightSidebar": {
     "message": "Right Sidebar"
   },
@@ -26,16 +23,28 @@
   "note_reload_required": {
     "message": "*Reload required after changing"
   },
-  "setting_hideRightSidebar": {
-    "message": "Trends & Suggestions"
-  },
-  "setting_hideSearchBar": {
+  "setting_hideRightSidebarSearchBar": {
     "message": "Search Bar"
   },
-  "setting_hideTweetInput": {
+  "setting_hideRightSidebarPremium": {
+    "message": "Premium"
+  },
+  "setting_hideRightSidebarNews": {
+    "message": "News"
+  },
+  "setting_hideRightSidebarTrends": {
+    "message": "Trends"
+  },
+  "setting_hideRightSidebarWhoToFollow": {
+    "message": "Who to follow"
+  },
+  "setting_hideRightSidebarFooter": {
+    "message": "Footer"
+  },
+  "setting_hideTimelineTweetInput": {
     "message": "Post Input"
   },
-  "timeline_post": {
+  "category_timeline_post": {
     "message": "Post"
   },
   "setting_hideTimelineGrok": {
@@ -44,26 +53,58 @@
   "category_overlay": {
     "message": "Floating / Overlay"
   },
-  "setting_hideDMDrawer": {
+  "setting_hideOverlayDMDrawer": {
     "message": "Chat"
   },
-  "setting_hideGrokDrawer": {
+  "setting_hideOverlayGrokDrawer": {
     "message": "Grok"
   },
-  "nav_logo": { "message": "X Logo" },
-  "nav_home": { "message": "Home" },
-  "nav_explore": { "message": "Explore" },
-  "nav_notifications": { "message": "Notifications" },
-  "nav_messages": { "message": "Chat" },
-  "nav_grok": { "message": "Grok" },
-  "nav_lists": { "message": "Lists" },
-  "nav_bookmarks": { "message": "Bookmarks" },
-  "nav_communities": { "message": "Communities" },
-  "nav_premium": { "message": "Premium" },
-  "nav_profile": { "message": "Profile" },
-  "nav_more": { "message": "More" },
-  "nav_tweetButton": { "message": "Post" },
-  "nav_accountSwitcher": { "message": "Account Switcher" },
-  "footer_donate": { "message": "Donate (Streamlabs)" },
-  "footer_github": { "message": "GitHub (Source)" }
+  "setting_icon_logo": {
+    "message": "X Logo"
+  },
+  "setting_icon_home": {
+    "message": "Home"
+  },
+  "setting_icon_explore": {
+    "message": "Explore"
+  },
+  "setting_icon_notifications": {
+    "message": "Notifications"
+  },
+  "setting_icon_messages": {
+    "message": "Chat"
+  },
+  "setting_icon_grok": {
+    "message": "Grok"
+  },
+  "setting_icon_lists": {
+    "message": "Lists"
+  },
+  "setting_icon_bookmarks": {
+    "message": "Bookmarks"
+  },
+  "setting_icon_communities": {
+    "message": "Communities"
+  },
+  "setting_icon_premium": {
+    "message": "Premium"
+  },
+  "setting_icon_profile": {
+    "message": "Profile"
+  },
+  "setting_icon_more": {
+    "message": "More"
+  },
+  "setting_icon_tweetButton": {
+    "message": "Post"
+  },
+  "setting_icon_accountSwitcher": {
+    "message": "Account Switcher"
+  },
+  "footer_donate": {
+    "message": "Donate (Streamlabs)"
+  },
+  "footer_github": {
+    "message": "GitHub (Source)"
+  }
 }

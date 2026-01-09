@@ -1,9 +1,9 @@
 (function() {
   /*
-   * Feature: hideTweetInput
+   * Feature: hideTimelineTweetInput
    * Hide the compose box at the top of the timeline.
    */
-  const inputFeatureId = 'hideTweetInput';
+  const inputFeatureId = 'hideTimelineTweetInput';
   const inputCss = `
     /* Hiding the container that has the tweet input ONLY in the primary column timeline */
     /* Structure: primaryColumn > (scroll wrapper) > (header + input + timeline) */

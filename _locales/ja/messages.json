@@ -11,9 +11,6 @@
   "category_leftSidebar": {
     "message": "左サイドバー"
   },
-  "category_navItems": {
-    "message": "ナビゲーション"
-  },
   "category_rightSidebar": {
     "message": "右サイドバー"
   },
@@ -26,16 +23,28 @@
   "note_reload_required": {
     "message": "※設定変更後はページの再読み込みが必要です"
   },
-  "setting_hideRightSidebar": {
-    "message": "トレンド・おすすめ等"
-  },
-  "setting_hideSearchBar": {
+  "setting_hideRightSidebarSearchBar": {
     "message": "検索"
   },
-  "setting_hideTweetInput": {
+  "setting_hideRightSidebarPremium": {
+    "message": "プレミアムにサブスクライブ"
+  },
+  "setting_hideRightSidebarNews": {
+    "message": "本日のニュース"
+  },
+  "setting_hideRightSidebarTrends": {
+    "message": "「いま」を見つけよう"
+  },
+  "setting_hideRightSidebarWhoToFollow": {
+    "message": "おすすめユーザー"
+  },
+  "setting_hideRightSidebarFooter": {
+    "message": "フッター"
+  },
+  "setting_hideTimelineTweetInput": {
     "message": "ポスト欄"
   },
-  "timeline_post": {
+  "category_timeline_post": {
     "message": "ポスト"
   },
   "setting_hideTimelineGrok": {
@@ -44,26 +53,58 @@
   "category_overlay": {
     "message": "フローティング / オーバーレイ"
   },
-  "setting_hideDMDrawer": {
+  "setting_hideOverlayDMDrawer": {
     "message": "チャット"
   },
-  "setting_hideGrokDrawer": {
+  "setting_hideOverlayGrokDrawer": {
     "message": "Grok"
   },
-  "nav_logo": { "message": "X ロゴ" },
-  "nav_home": { "message": "ホーム" },
-  "nav_explore": { "message": "話題を検索" },
-  "nav_notifications": { "message": "通知" },
-  "nav_messages": { "message": "チャット" },
-  "nav_grok": { "message": "Grok" },
-  "nav_lists": { "message": "リスト" },
-  "nav_bookmarks": { "message": "ブックマーク" },
-  "nav_communities": { "message": "コミュニティ" },
-  "nav_premium": { "message": "プレミアム" },
-  "nav_profile": { "message": "プロフィール" },
-  "nav_more": { "message": "もっと見る" },
-  "nav_tweetButton": { "message": "ポストする" },
-  "nav_accountSwitcher": { "message": "アカウント切り替え" },
-  "footer_donate": { "message": "寄付 (Streamlabs)" },
-  "footer_github": { "message": "GitHub (ソースコード)" }
+  "setting_icon_logo": {
+    "message": "X ロゴ"
+  },
+  "setting_icon_home": {
+    "message": "ホーム"
+  },
+  "setting_icon_explore": {
+    "message": "話題を検索"
+  },
+  "setting_icon_notifications": {
+    "message": "通知"
+  },
+  "setting_icon_messages": {
+    "message": "チャット"
+  },
+  "setting_icon_grok": {
+    "message": "Grok"
+  },
+  "setting_icon_lists": {
+    "message": "リスト"
+  },
+  "setting_icon_bookmarks": {
+    "message": "ブックマーク"
+  },
+  "setting_icon_communities": {
+    "message": "コミュニティ"
+  },
+  "setting_icon_premium": {
+    "message": "プレミアム"
+  },
+  "setting_icon_profile": {
+    "message": "プロフィール"
+  },
+  "setting_icon_more": {
+    "message": "もっと見る"
+  },
+  "setting_icon_tweetButton": {
+    "message": "ポストする"
+  },
+  "setting_icon_accountSwitcher": {
+    "message": "アカウント切り替え"
+  },
+  "footer_donate": {
+    "message": "寄付 (Streamlabs)"
+  },
+  "footer_github": {
+    "message": "GitHub (ソースコード)"
+  }
 }
