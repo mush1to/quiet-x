@@ -18,6 +18,10 @@
     }
   };
 
+  /*
+   * Feature: hideTimelineGrok
+   * Hide Grok-related UI elements in timeline posts.
+   */
   const grokFeatureId = 'hideTimelineGrok';
   const grokCss = `
     article div:has(> div:nth-child(2) button[data-testid="caret"]) > div:nth-child(1):has(button[type="button"] svg[viewBox="0 0 33 32"]),

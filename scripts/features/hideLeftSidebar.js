@@ -1,26 +1,30 @@
 (function() {
-  const featureId = 'hideLeftSidebarText';
-  
-  // Provided SVG path for the post button
-  const featherPath = "M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z";
-  
-  // Helper to update the main background color variable
-  function updateMainBgColor() {
-    const bgColor = window.getComputedStyle(document.body).backgroundColor;
-    document.documentElement.style.setProperty('--quiet-x-main-bg', bgColor);
-  }
+  {
+    /*
+     * Feature: hideLeftSidebarText
+     * Hide text labels in the left sidebar to show icons only.
+     */
+    const featureId = 'hideLeftSidebarText';
 
-  // Initial update
-  updateMainBgColor();
+    // Provided SVG path for the post button
+    const featherPath = "M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z";
 
-  // Observer to update color if theme changes
-  const observer = new MutationObserver(() => {
+    // Helper to update the main background color variable
+    function updateMainBgColor() {
+      const bgColor = window.getComputedStyle(document.body).backgroundColor;
+      document.documentElement.style.setProperty('--quiet-x-main-bg', bgColor);
+    }
+
+    // Initial update
     updateMainBgColor();
-  });
-  observer.observe(document.body, { attributes: true, attributeFilter: ['style', 'class'] });
 
+    // Observer to update color if theme changes
+    const observer = new MutationObserver(() => {
+      updateMainBgColor();
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['style', 'class'] });
 
-  const css = `
+    const css = `
     /* 
        Refined Strategy: 
        1. Do NOT constrain the width of the header.
@@ -44,7 +48,6 @@
        opacity: 1 !important;
     }
 
-
     /* --- 2. "More" Menu --- */
     [data-testid="AppTabBar_More_Menu"] div[dir="ltr"]:not(:has(svg)) {
       display: none !important;
@@ -53,12 +56,10 @@
        display: flex !important;
     }
 
-
     /* --- 3. Account Switcher --- */
     [data-testid="SideNav_AccountSwitcher_Button"] > div:not(:first-child) {
       display: none !important;
     }
-
 
     /* --- 4. Tweet Button Styling --- */
     [data-testid="SideNav_NewTweet_Button"],
@@ -128,7 +129,6 @@
       display: none !important;
     }
 
-
     /* --- 5. Sidebar Layout Adjustment --- */
     header[role="banner"] nav[role="navigation"] {
       align-items: flex-end !important;
@@ -161,12 +161,61 @@
 
   `;
 
-  window.QuietX.features[featureId] = {
-    apply: (active) => {
-      window.QuietX.utils.updateStyle(featureId, css, active);
-      if (active) {
+    window.QuietX.features[featureId] = {
+      apply: (active) => {
+        window.QuietX.utils.updateStyle(featureId, css, active);
+        if (active) {
           updateMainBgColor();
+        }
       }
-    }
-  };
+    };
+  }
+
+  {
+    /*
+     * Feature: nav_*
+     * Hide individual left sidebar navigation items.
+     */
+    const featureId = 'hideSidebarItems';
+
+    // Map of config keys to CSS selectors
+    const itemSelectors = {
+      // Top Logo: The link to /home inside the h1 header
+      'nav_logo': 'h1[role="heading"] a[href="/home"]',
+
+      // Home Nav Item: The link to /home inside the navigation role
+      // Crucial: Use nav[role="navigation"] to distinguish from the logo
+      'nav_home': 'nav[role="navigation"] a[href="/home"]',
+
+      'nav_explore': 'a[href="/explore"]',
+      'nav_notifications': 'a[href="/notifications"]',
+      'nav_messages': 'a[href="/i/chat"], a[href^="/messages"]',
+      'nav_grok': 'a[href="/i/grok"]',
+      'nav_lists': 'a[href$="/lists"][role="link"]',
+      'nav_bookmarks': 'a[href="/i/bookmarks"]',
+      'nav_communities': 'a[href$="/communities"][role="link"]',
+      'nav_premium': 'a[href="/i/premium_sign_up"], [data-testid="premium-signup-tab"]',
+      'nav_profile': '[data-testid="AppTabBar_Profile_Link"]',
+      'nav_more': '[data-testid="AppTabBar_More_Menu"]',
+      'nav_tweetButton': '[data-testid="SideNav_NewTweet_Button"], a[href="/compose/post"]',
+      'nav_accountSwitcher': '[data-testid="SideNav_AccountSwitcher_Button"]'
+    };
+
+    const items = Object.keys(itemSelectors);
+
+    items.forEach(key => {
+      const selector = itemSelectors[key];
+      const css = `
+      header[role="banner"] ${selector} {
+        display: none !important;
+      }
+    `;
+
+      window.QuietX.features[key] = {
+        apply: (active) => {
+          window.QuietX.utils.updateStyle(key, css, active);
+        }
+      };
+    });
+  }
 })();
