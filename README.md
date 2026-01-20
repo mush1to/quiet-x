@@ -16,7 +16,7 @@ Customize your X experience by toggling the following elements:
   - Chat (Messages)
   - Grok
   - Bookmarks
-  - v
+  - Creators Studio
   - Communities
   - Premium
   - Profile
