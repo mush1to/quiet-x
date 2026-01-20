@@ -1,10 +1,11 @@
 (function() {
-  /*
-   * Feature: hideOverlayDMDrawer
-   * Hide the DM Drawer (Message Box) at the bottom right.
-   */
-  const dmFeatureId = 'hideOverlayDMDrawer';
-  const dmCss = `
+  {
+    /*
+     * Feature: hideOverlayDMDrawer
+     * Hide the DM Drawer (Message) at the bottom right.
+     */
+    const featureId = 'hideOverlayDMDrawer';
+    const css = `
     /* Primary Target: The main drawer container provided by user */
     [data-testid="chat-drawer-main"],
     
@@ -26,20 +27,22 @@
     div[style*="position: fixed"][style*="bottom:"][style*="right:"]:has(svg[data-icon="icon-messages-stroke"]) {
       display: none !important;
     }
-  `;
+    `;
 
-  window.QuietX.features[dmFeatureId] = {
-    apply: (active) => {
-      window.QuietX.utils.updateStyle(dmFeatureId, dmCss, active);
-    }
-  };
+    window.QuietX.features[featureId] = {
+      apply: (active) => {
+        window.QuietX.utils.updateStyle(featureId, css, active);
+      }
+    };
+  }
 
-  /*
-   * Feature: hideOverlayGrokDrawer
-   * Hide only the Grok Drawer/Button at the bottom right.
-   */
-  const grokFeatureId = 'hideOverlayGrokDrawer';
-  const grokCss = `
+  {
+    /*
+     * Feature: hideOverlayGrokDrawer
+     * Hide only the Grok Drawer/Button at the bottom right.
+     */
+    const featureId = 'hideOverlayGrokDrawer';
+    const css = `
     /* 1. Explicit Grok Drawer ID */
     [data-testid="GrokDrawer"],
     
@@ -53,12 +56,13 @@
     div[style*="position: fixed"][style*="bottom:"][style*="right:"]:has([data-testid="chat-drawer-main"] svg path[d^="M12.745 20.54"]) {
       display: none !important;
     }
-  `;
+    `;
 
-  window.QuietX.features[grokFeatureId] = {
-    apply: (active) => {
-      window.QuietX.utils.updateStyle(grokFeatureId, grokCss, active);
-    }
-  };
+    window.QuietX.features[featureId] = {
+      apply: (active) => {
+        window.QuietX.utils.updateStyle(featureId, css, active);
+      }
+    };
+  }
 
 })();

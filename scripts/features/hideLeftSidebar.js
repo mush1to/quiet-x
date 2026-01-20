@@ -191,10 +191,10 @@
       'icon_notifications': 'a[href="/notifications"]',
       'icon_messages': 'a[href="/i/chat"], a[href^="/messages"]',
       'icon_grok': 'a[href="/i/grok"]',
-      'icon_lists': 'a[href$="/lists"][role="link"]',
       'icon_bookmarks': 'a[href="/i/bookmarks"]',
+      'icon_creatorsStudio': 'a[href="/i/jf/creators/studio"]',
       'icon_communities': 'a[href$="/communities"][role="link"]',
-      'icon_premium': 'a[href="/i/premium_sign_up"], [data-testid="premium-signup-tab"]',
+      'icon_premium': 'a[href="/i/premium_sign_up"], [data-testid]="premium-signup-tab"]',
       'icon_profile': '[data-testid="AppTabBar_Profile_Link"]',
       'icon_more': '[data-testid="AppTabBar_More_Menu"]',
       'icon_tweetButton': '[data-testid="SideNav_NewTweet_Button"], a[href="/compose/post"]',
@@ -203,17 +203,17 @@
 
     const items = Object.keys(itemSelectors);
 
-    items.forEach(key => {
-      const selector = itemSelectors[key];
+    items.forEach(featureId => {
+      const selector = itemSelectors[featureId];
       const css = `
       header[role="banner"] ${selector} {
         display: none !important;
       }
     `;
 
-      window.QuietX.features[key] = {
+      window.QuietX.features[featureId] = {
         apply: (active) => {
-          window.QuietX.utils.updateStyle(key, css, active);
+          window.QuietX.utils.updateStyle(featureId, css, active);
         }
       };
     });

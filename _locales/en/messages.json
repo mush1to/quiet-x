@@ -77,11 +77,11 @@
   "setting_icon_grok": {
     "message": "Grok"
   },
-  "setting_icon_lists": {
-    "message": "Lists"
-  },
   "setting_icon_bookmarks": {
     "message": "Bookmarks"
+  },
+  "setting_icon_creatorsStudio": {
+    "message": "Creators Studio"
   },
   "setting_icon_communities": {
     "message": "Communities"

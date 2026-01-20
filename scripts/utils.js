@@ -5,8 +5,8 @@ window.QuietX.utils = {
   // id: unique identifier for the style tag
   // css: css string
   // active: boolean
-  updateStyle: (id, css, active) => {
-    const styleId = `quiet-x-style-${id}`;
+  updateStyle: (featureId, css, active) => {
+    const styleId = `quiet-x-style-${featureId}`;
     let styleEl = document.getElementById(styleId);
     
     if (active) {

@@ -77,11 +77,11 @@
   "setting_icon_grok": {
     "message": "Grok"
   },
-  "setting_icon_lists": {
-    "message": "リスト"
-  },
   "setting_icon_bookmarks": {
     "message": "ブックマーク"
+  },
+  "setting_icon_creatorsStudio": {
+    "message": "クリエイタースタジオ"
   },
   "setting_icon_communities": {
     "message": "コミュニティ"

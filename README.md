@@ -6,7 +6,7 @@ Quiet X is a Chrome extension that cleans up and simplifies the X (formerly Twit
 
 Customize your X experience by toggling the following elements:
 
-### 🎨 Left Sidebar
+### 🎨 ｖｖ
 - **Text**: Hide menu text labels to show only icons.
 - **Navigation**: Individually toggle visibility for:
   - Logo
@@ -15,8 +15,8 @@ Customize your X experience by toggling the following elements:
   - Notifications
   - Chat (Messages)
   - Grok
-  - Lists
   - Bookmarks
+  - Creators Studio
   - Communities
   - Premium
   - Profile
